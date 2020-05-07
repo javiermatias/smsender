@@ -1,0 +1,16 @@
+h3 {
+    position: fixed;
+    top: 30%;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: 10;
+    
+  }
+  
+  @keyframes example {
+    0%   {left:0%; }
+    25%  {left:20%;}
+    50%  {left:40%; }
+    75%  {left:60%; }
+    100% {left:80%;}
+  }
