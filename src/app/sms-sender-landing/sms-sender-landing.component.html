@@ -11,7 +11,7 @@
           <h1 class="w3-xlarge">Envía SMS automáticos con esta app</h1>
           <hr class="w3-opacity">
           <p>Muy fácil de instalar: gratis para probar!</p>
-          <p><button class="w3-button w3-block w3-green w3-round" onclick="document.getElementById('download').style.display='block'">Download   <i class="fa fa-windows"></i></button></p>
+          <p><button class="w3-button w3-block w3-green w3-round" (click)="mostrarDescarga()">Download   <i class="fa fa-windows"></i></button></p>
         </div>
       </div>
     </div>
@@ -19,10 +19,10 @@
       <img class="w3-image" src="/assets/app2.jpg" alt="Image 2" style="min-width:500px" width="1500" height="1000">
       <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
         <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
-          <h1 class="w3-xlarge w3-text-red"><b>CLICK!</b> Rápido y muy sencillo de usar!</h1>
+          <h1 class="w3-xlarge w3-text-red">Rápido y muy sencillo de usar!</h1>
           <hr class="w3-opacity">
           <p>Usas tu propio telefono</p>
-          <p><button class="w3-button w3-block w3-red w3-round" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
+          <p><button class="w3-button w3-block w3-red w3-round" (click)="mostrarDescarga()">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
         </div>
       </div>
     </div>
@@ -33,11 +33,59 @@
           <h1 class="w3-xlarge">Expande tu negocio</h1>
           <hr class="w3-opacity">
           <p>Manten bien comunicados a tus clientes y atrae nuevos! </p>
-          <p><button class="w3-button w3-block w3-indigo w3-round" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
+          <p><button class="w3-button w3-block w3-indigo w3-round" (click)="mostrarDescarga()">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
         </div>
       </div>
     </div>
     <a class="w3-button w3-black w3-display-right w3-margin-right w3-round w3-hide-small w3-hover-light-grey" (click)="pasarSlide()">Más Información<i class="fa fa-angle-right"></i></a>
     <a class="w3-button w3-block w3-black w3-hide-large w3-hide-medium" (click)="pasarSlide()">Más Información <i class="fa fa-angle-right"></i></a>
   </header>
+
+  
+
+  <div *ngIf= 'descarga'>
+    <app-modal (closed)="onClose($event)"></app-modal>
+    </div>
+
+    <!-- Clarity Section -->
+<div class="w3-padding-64 w3-light-grey">
+  <div class="w3-row-padding">
+    <div class="w3-col l4 m6">
+      <img class="w3-image w3-round-large w3-hide-small w3-grayscale" src="/assets/sms2-335x471.png" alt="App" width="335" height="471">
+    </div>
+    <div class="w3-col l8 m6">
+      <h1 class="w3-jumbo"><b>Potencia tu negocio</b></h1>
+      <h1 class="w3-xxxlarge w3-text-red"><b>Atrae mas clientes</b></h1>
+      <p><span class="w3-xlarge">Revolución en el envío de mensajes.</span> Con este revolucionario sistema, vas a poder estas mas cerca de tus clientes, ofreciendo nuevos productos, recordando citas,y todo lo que se te pueda ocurrir. El sistema es el mas sencillo y fácil de usar del mercado. También es novedoso y único en su forma de enviar. No lo pienses mas y sumate al éxito. SmartSoft te acompaña en el camino.</p>
+    </div>
+  </div>
+</div>
+
+
+    <!-- The App Section -->
+<div class="w3-padding-64 w3-white">
+  <div class="w3-row-padding">
+    <div class="w3-col l8 m6">
+      <h1 class="w3-jumbo"><b>SMS SENDER</b></h1>
+      <h1 class="w3-xxxlarge w3-text-green"><b>Para que sirve?</b></h1>
+      <p><span class="w3-xlarge">Envia mensajes automáticos.</span> 
+        Es un programa de escritorio que permite enviar masivamente mensajes de texto(SMS) a todos los contactos que tengas. 
+        Sirve para diversas aplicaciones como Publicidad, Recordatorios, Ventas, Cobranzas Y mucho más.
+         Recuerda que necesitas una PC con Windows 7 o Superior, Conexión a Internet y Télefono con Android.</p>
+      <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small" (click)="mostrarDescarga()">
+        <i class="fa fa-download"></i> Descargar aplicación
+      </button>
+      <p>Disponible para <i class="fa fa-windows w3-xlarge w3-text-blue"></i></p>
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/assets/sms335x471.png" class="w3-image w3-right w3-hide-small" width="335" height="471">
+      <div class="w3-center w3-hide-large w3-hide-medium">
+        <button class="w3-button w3-block w3-padding-large" (click)="mostrarDescarga()">
+          <i class="fa fa-download"></i> Descargar aplicación
+        </button>
+        <img src="/assets/sms335x471.png" class="w3-image w3-margin-top" width="335" height="471">
+      </div>
+    </div>
+  </div>
+</div>
 

@@ -9,14 +9,28 @@ export class SmsSenderLandingComponent implements OnInit {
 
   slides:string[] =["1","2","3"] ;
   slideActual ="1";
+
+  descarga= false;
+
+  interval;
   constructor() { }
 
   ngOnInit() {
+    //this.startTimer();
   }
+
+
+  startTimer() {
+    this.interval = setInterval(() => {
+      this.pasarSlide();
+    },5000)
+  }
+
+
 
   pasarSlide(){
 
-    console.log("paso slide");
+   // console.log("paso slide");
     for (var _i = 0; _i < this.slides.length; _i++) {
       
       
@@ -39,4 +53,15 @@ export class SmsSenderLandingComponent implements OnInit {
   alert() {
     window.alert('test');
   }
+
+  mostrarDescarga(){
+
+    console.log("modal se activo");
+    this.descarga=true;
+  }
+
+  onClose(_close: boolean) {
+    this.descarga=false;
+  }
+  
 }
