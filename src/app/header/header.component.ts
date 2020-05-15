@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, ElementRef, ViewChild  } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ElementRef, ViewChild, EventEmitter, Output  } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,6 +7,7 @@ import { Component, OnInit, AfterViewInit, ElementRef, ViewChild  } from '@angul
 })
 export class HeaderComponent implements OnInit{
   
+  @Output() clickcontact = new EventEmitter();
   scroll:boolean=false;
 
   class:string="w3-bar"
@@ -17,13 +18,20 @@ export class HeaderComponent implements OnInit{
   ngOnInit() {
     window.addEventListener('scroll', this.scrolling, true)
   }
+  
 
+  contact(el: HTMLElement){
+
+    console.log("se hizo click en contacto");
+
+    this.clickcontact.emit();
+  }
   scrolling=(s)=>{
     let sc = s.target.scrollingElement.scrollTop;
-    console.log(sc);
+    //console.log(sc);
     if(sc >=60){
       this.scroll=true
-      console.log("Se activo Scroll");
+      //console.log("Se activo Scroll");
     }
     else{
       

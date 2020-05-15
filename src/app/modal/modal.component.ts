@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Client } from '../class/client';
 
 @Component({
   selector: 'app-modal',
@@ -9,6 +10,14 @@ export class ModalComponent implements OnInit {
 
   @Output() closed = new EventEmitter<boolean>();
 
+  cliente = new Client('', '', '');
+
+  submitted = false;
+
+  onSubmit() { 
+    
+    alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.cliente))
+    this.submitted = true; }
   //close = false;
   constructor() { }
 

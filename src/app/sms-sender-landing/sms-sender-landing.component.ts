@@ -64,4 +64,15 @@ export class SmsSenderLandingComponent implements OnInit {
     this.descarga=false;
   }
   
+/*   contacto(){
+  
+        console.log("se hizo click en contactoSMS");
+      } */
+
+  contacto(el: HTMLElement){
+    console.log(el);
+    
+        el.scrollIntoView({behavior: 'smooth'});
+        console.log("se hizo click en contacto");
+      }
 }
