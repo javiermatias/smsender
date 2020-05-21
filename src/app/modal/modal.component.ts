@@ -1,5 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Client } from '../class/client';
+import { SmsService } from '../services/sms.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-modal',
@@ -8,24 +10,39 @@ import { Client } from '../class/client';
 })
 export class ModalComponent implements OnInit {
 
-  @Output() closed = new EventEmitter<boolean>();
+  @Output() closed = new EventEmitter<{ok:boolean, user: string}>();
 
   cliente = new Client('', '', '');
 
   submitted = false;
 
-  onSubmit() { 
-    
-    alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.cliente))
-    this.submitted = true; }
+
   //close = false;
-  constructor() { }
+  constructor(private _smsService:SmsService,private router: Router) { 
+
+  }
+
+  onSubmit() { 
+
+
+    this._smsService.postCliente(this.cliente)
+    .subscribe(
+  data => this.closes(true,data.user),
+  err => this.closes(false,err)
+);
+
+} 
+   
+
 
   ngOnInit() {
   }
 
-  closes(_close: boolean) {
-    this.closed.emit(_close);
+  
+
+  closes(_ok:boolean,_user:string) {
+
+    this.closed.emit({ok:_ok, user:_user});
     //this.didVote = true;
   }
 

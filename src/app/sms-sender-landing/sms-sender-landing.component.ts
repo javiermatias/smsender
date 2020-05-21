@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sms-sender-landing',
@@ -13,7 +14,7 @@ export class SmsSenderLandingComponent implements OnInit {
   descarga= false;
 
   interval;
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     //this.startTimer();
@@ -56,18 +57,21 @@ export class SmsSenderLandingComponent implements OnInit {
 
   mostrarDescarga(){
 
-    console.log("modal se activo");
+    //console.log("modal se activo");
     this.descarga=true;
   }
+  
+  onClose(object) {
 
-  onClose(_close: boolean) {
+   if(object.ok ){
+
     this.descarga=false;
+    //this.router.navigate(['download']);
+    this.router.navigate(['download/', object.user]);
+   }
+
   }
-  
-/*   contacto(){
-  
-        console.log("se hizo click en contactoSMS");
-      } */
+
 
   contacto(el: HTMLElement){
     console.log(el);

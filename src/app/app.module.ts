@@ -7,18 +7,23 @@ import { SmsSenderLandingComponent } from './sms-sender-landing/sms-sender-landi
 import { HeaderComponent } from './header/header.component';
 import { ModalComponent } from './modal/modal.component';
 import { FormsModule }   from '@angular/forms';
-
+import { HttpClientModule }    from '@angular/common/http';
+import { DownloadSmsComponent } from './download-sms/download-sms.component';
+import { NgHttpLoaderModule } from 'ng-http-loader';
 @NgModule({
   declarations: [
     AppComponent,
     SmsSenderLandingComponent,
     HeaderComponent,
-    ModalComponent
+    ModalComponent,
+    DownloadSmsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    NgHttpLoaderModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
