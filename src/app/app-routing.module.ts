@@ -2,12 +2,15 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { SmsSenderLandingComponent } from './sms-sender-landing/sms-sender-landing.component';
 import { DownloadSmsComponent } from './download-sms/download-sms.component';
+import { WhatsappLandingComponent } from './whatsapp-landing/whatsapp-landing.component';
 
 
 const routes: Routes = [
 
   { path: 'sms-landing', component: SmsSenderLandingComponent },
-  { path: 'download/:user', component: DownloadSmsComponent },
+  { path: 'whatsapp-landing', component: WhatsappLandingComponent },
+  { path: 'downloadSMS/:user', component: DownloadSmsComponent },
+  { path: 'downloadWhats/:user', component: DownloadSmsComponent },
   { path: '',   redirectTo: '/sms-landing', pathMatch: 'full' }, // sms-landing-}
   
 ];

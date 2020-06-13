@@ -10,13 +10,17 @@ import { FormsModule }   from '@angular/forms';
 import { HttpClientModule }    from '@angular/common/http';
 import { DownloadSmsComponent } from './download-sms/download-sms.component';
 import { NgHttpLoaderModule } from 'ng-http-loader';
+import { WhatsappLandingComponent } from './whatsapp-landing/whatsapp-landing.component';
+import { DownloadWhatsappComponent } from './download-whatsapp/download-whatsapp.component';
 @NgModule({
   declarations: [
     AppComponent,
     SmsSenderLandingComponent,
     HeaderComponent,
     ModalComponent,
-    DownloadSmsComponent
+    DownloadSmsComponent,
+    WhatsappLandingComponent,
+    DownloadWhatsappComponent
   ],
   imports: [
     BrowserModule,

@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit{
   }
   
 
-  contact(el: HTMLElement){
+  contact(){
 
     console.log("se hizo click en contacto");
 

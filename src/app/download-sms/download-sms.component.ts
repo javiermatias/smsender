@@ -16,7 +16,7 @@ export class DownloadSmsComponent implements OnInit {
    }
 
   ngOnInit() {
-    this.user=this.route.snapshot.paramMap.get("user")
+    this.user=this.route.snapshot.paramMap.get("user");
 
   }
 

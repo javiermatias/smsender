@@ -8,11 +8,9 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
+export class WhatsappService {
 
-
-
-export class SmsService {
-  APIEndpoint = environment.apiEndpoint + "sms";
+  APIEndpoint = environment.apiEndpoint + "whatsapp";
   constructor(private http: HttpClient) { }
 
 

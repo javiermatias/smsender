@@ -46,4 +46,10 @@ export class ModalComponent implements OnInit {
     //this.didVote = true;
   }
 
+  close(_ok:boolean){
+
+    this.closed.emit({ok:_ok, user:"any"});
+
+  }
+
 }

@@ -67,7 +67,9 @@ export class SmsSenderLandingComponent implements OnInit {
 
     this.descarga=false;
     //this.router.navigate(['download']);
-    this.router.navigate(['download/', object.user]);
+    this.router.navigate(['downloadSMS/', object.user]);
+   }else{
+    this.descarga=false;
    }
 
   }

@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiEndpoint: 'http://localhost:8080/sms'
+  apiEndpoint: 'http://localhost:8080/'
 };
 
 /*
