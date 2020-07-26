@@ -63,6 +63,7 @@ export class SmsSenderLandingComponent implements OnInit {
   
   onClose(object) {
 
+    console.log(object.ok);
    if(object.ok ){
 
     this.descarga=false;

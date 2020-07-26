@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,8 @@ export class AppComponent implements OnInit  {
   ngOnInit(): void {
     this.cargando = true;
     console.log("se cargo app");
+    AOS.init();
+    
   }
  
 

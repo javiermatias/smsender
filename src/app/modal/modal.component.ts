@@ -2,6 +2,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Client } from '../class/client';
 import { SmsService } from '../services/sms.service';
 import { Router } from '@angular/router';
+import { WhatsappService } from '../services/whatsapp.service';
 
 @Component({
   selector: 'app-modal',
@@ -16,20 +17,37 @@ export class ModalComponent implements OnInit {
 
   submitted = false;
 
-
+   actualRouter:string="";
   //close = false;
-  constructor(private _smsService:SmsService,private router: Router) { 
+  constructor(private _smsService:SmsService, private _whatsAppService:WhatsappService, private router: Router) { 
+ 
+    this.actualRouter=this.router.url;
 
+    //console.log(this.router.url);
   }
 
   onSubmit() { 
 
+    if(this.actualRouter  == "/sms-landing"){
 
-    this._smsService.postCliente(this.cliente)
-    .subscribe(
-  data => this.closes(true,data.user),
-  err => this.closes(false,err)
-);
+      this._smsService.postCliente(this.cliente)
+      .subscribe(
+    data => this.closes(true,data.user),
+    err => this.closes(false,err)
+  );
+
+  
+    }else if (this.actualRouter  == "/whatsapp-landing"){
+
+      this._whatsAppService.postCliente(this.cliente)
+      .subscribe(
+    data => this.closes(true,data.user),
+    err => this.closes(false,err)
+  );
+
+    }
+
+ 
 
 } 
    
