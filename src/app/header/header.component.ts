@@ -22,7 +22,7 @@ export class HeaderComponent implements OnInit{
 
   contact(){
 
-    console.log("se hizo click en contacto");
+    //console.log("se hizo click en contacto");
 
     this.clickcontact.emit();
   }

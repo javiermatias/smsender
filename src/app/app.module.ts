@@ -12,6 +12,9 @@ import { DownloadSmsComponent } from './download-sms/download-sms.component';
 import { NgHttpLoaderModule } from 'ng-http-loader';
 import { WhatsappLandingComponent } from './whatsapp-landing/whatsapp-landing.component';
 import { DownloadWhatsappComponent } from './download-whatsapp/download-whatsapp.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { FaqsComponent } from './faqs/faqs.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,14 +23,17 @@ import { DownloadWhatsappComponent } from './download-whatsapp/download-whatsapp
     ModalComponent,
     DownloadSmsComponent,
     WhatsappLandingComponent,
-    DownloadWhatsappComponent
+    DownloadWhatsappComponent,
+    FaqsComponent
   ],
-  imports: [
+  imports: [    
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    NgHttpLoaderModule.forRoot()
+    NgHttpLoaderModule.forRoot(),
+  
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,30 +2,42 @@
 
 
 
+<div id="mobile" class="w3-top" style="position: fixed; top: 0;
+left: 0;"> 
+
+  <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-left" href="javascript:void(0);" 
+      (click)="acerca()" title="Navegación">
+        <i class="fa fa-bars"></i>
+      </a>
+</div>
+
+
 <!-- </div> -->
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
+<div id="top" class="w3-top">
     <div [ngClass]="scroll ? 'w3-bar w3-card w3-animate-top w3-white' : 'w3-bar'" id="myNavbar">
 
      <!--  <div [ngClass]="class2" id="myNavbar"> -->
-      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" (click)="acerca()" title="Toggle Navigation Menu">
-        <i class="fa fa-bars"></i>
-      </a>
+    
       <a href="#home" class="w3-bar-item w3-button">HOME</a>
      <!--  <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a> -->
     <!--   <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a> -->
+
+  
       <a (click)="contact()" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACTO</a>
  <!--      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
         <i class="fa fa-search"></i>
       </a> -->
+      <a routerLink="/faqs" class="w3-bar-item w3-button"><i class="fa fa-question-circle"></i>PREGUNTAS FRECUENTES</a>
+    
     </div>
   
-    <!-- Navbar on small screens -->
-    <!-- <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <!-- Navbar on small screens  -->
+   <!--   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
       <a href="#about" class="w3-bar-item w3-button" (click)="acerca()">ABOUT</a>
    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
       <a href="#contact" class="w3-bar-item w3-button" (click)="acerca()">CONTACT</a>
       <a href="#" class="w3-bar-item w3-button">SEARCH</a> 
-    </div> -->
+    </div>  -->
   </div>
