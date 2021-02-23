@@ -22,3 +22,48 @@ img {margin-bottom: -8px;}
 .my-float {
     margin-top: 16px;
 }
+
+.video {
+    position: relative;
+    width: 100%;    
+    display:block; margin: 0 auto;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    background-color: antiquewhite;
+ 
+  }
+  .videoDiv
+{
+    width: 70%; /*or whatever % you prefer*/
+    margin: 0 auto;
+    display: block;
+}
+
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+  
+  .responsive-iframe {
+    display:block; margin: 0 auto;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    position: relative;
+    top: 0;
+    left: 20%;
+    bottom: 0;
+    right: 0;
+    width: 60%;
+    height: 60%;
+    border: none;
+   
+  }
