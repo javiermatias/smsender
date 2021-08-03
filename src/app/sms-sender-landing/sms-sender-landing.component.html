@@ -4,12 +4,16 @@
 <header class="w3-display-container w3-center">
     <button class="w3-button w3-block w3-green w3-hide-large w3-hide-medium" (click)="alert()">Download<i class="fa fa-windows"></i></button>
     <div *ngIf="slideActual === '1'" class="mySlides w3-animate-opacity">
-      <img  class="w3-image" src="/assets/sms1.jpg" alt="Image 1" style="min-width:100px" width="100%" height="1000">
+      <img title="Muy fácil de instalar: gratis para probar!"  class="w3-image" src="/assets/sms1.jpg" alt="Image 1" style="min-width:100px" width="100%" height="1000">
       <div class="w3-display-left w3-padding w3-hide-small" style="top:40%; width:35%">
         <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
-          <h1 class="w3-xlarge">Envía SMS automáticos con esta app</h1>
+          <h1 class="w3-xlarge">Envía SMS automáticos con esta App.</h1>
           <hr class="w3-opacity">
-          <p>Muy fácil de instalar: gratis para probar!</p>
+          <p>Desde su PC sin pagos mensuales ni compras mínimas, envié  
+            SMS ilimitados con los paquetes de Mensajes que te ofrece tu operadora. ¿Porque
+            pagar a terceros por el envío de SMS si puedes hacerlo desde tu PC a un costo
+            insignificante?.
+            </p>
           <p><button class="w3-button w3-block w3-green w3-round" (click)="mostrarDescarga()">Download   <i class="fa fa-windows"></i></button></p>
         </div>
       </div>
@@ -20,7 +24,7 @@
         <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
           <h1 class="w3-xlarge w3-text-red">Rápido y muy sencillo de usar!</h1>
           <hr class="w3-opacity">
-          <p>Usas tu propio telefono</p>
+          <p>Usas tu propio telefono.Muy fácil de instalar: gratis para probar!</p>
           <p><button class="w3-button w3-block w3-red w3-round" (click)="mostrarDescarga()">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
         </div>
       </div>
@@ -108,9 +112,9 @@
 <div class="w3-padding-64  w3-center w3-light-grey">
   <h1 class="w3-jumbo"><b>Precios</b></h1>
   <br>
-  <p class="w3-large">El precio mas conveniente del mercado. Con soporte y actualizaciones gratuitas.</p>
+  <p class="w3-large">El precio mas conveniente del mercado. Mensajes Ilimitados, soporte y actualizaciones gratuitas.</p>
   <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-half w3-section">
+<!--     <div class="w3-half w3-section">
      
         <ul class="w3-ul w3-card w3-hover-shadow">
           <li class="w3-red w3-xlarge w3-padding-32">Licencia Anual</li>
@@ -126,8 +130,9 @@
           </li>
         </ul>
       
-    </div>
-    <div class="w3-half w3-section">
+    </div> -->
+    <div  class="w3-quarter w3-section" ></div>
+    <div class="w3-half w3-section" style="margin: 0 auto;">
       <ul class="w3-ul w3-card w3-hover-shadow">
         <li class="w3-red w3-xlarge w3-padding-32">Licencia Definitiva</li>
         <li class="w3-padding-16"><b>Sin límites de mensajes.</b> </li>
@@ -137,13 +142,14 @@
         
         
         <li class="w3-padding-16">
-          <h2 class="w3-opacity">$ 100 Dólares Americanos.</h2>
+          <h2 class="w3-opacity">$ 60 Dólares Americanos.</h2>
         </li>
         <li class="w3-light-grey w3-padding-24">
           <button class="w3-button w3-black w3-padding-large" (click)="mostrarDescarga()"> <i class="fa fa-download"></i> Download</button>
         </li>
       </ul>
     </div>
+    <div  class="w3-quarter w3-section" ></div>
   </div>
   <br>
 </div>

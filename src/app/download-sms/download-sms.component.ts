@@ -20,4 +20,8 @@ export class DownloadSmsComponent implements OnInit {
 
   }
 
+  click(site:string){
+    console.log("User Click " + this.user + " Site "+ site);
+  }
+
 }
