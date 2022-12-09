@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "export NODE_OPTIONS=--openssl-legacy-provider && ng serve",
-    "build": "export NODE_OPTIONS=--openssl-legacy-provider && ng build", 
+    "start": "export NODE_OPTIONS=--openssl-legacy-provider && export NODE_OPTIONS=--no-experimental-fetch && ng serve --port 4205",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider && export NODE_OPTIONS=--no-experimental-fetch && ng build", 
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
