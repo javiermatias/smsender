@@ -9,11 +9,11 @@ import { FaqsComponent } from './faqs/faqs.component';
 
 const routes: Routes = [
 
-  { path: 'sms-landing', component: SmsSenderLandingComponent },
- /*  { path: 'faqs', component: FaqsComponent }, */
+  { path: 'sms-landing', component: SmsSenderLandingComponent },  
   { path: 'whatsapp-landing', component: WhatsappLandingComponent },
   { path: 'downloadSMS/:user', component: DownloadSmsComponent },
   { path: 'downloadWhats/:user', component: DownloadWhatsappComponent },
+  { path: 'faqs', component: FaqsComponent },
   { path: '',   redirectTo: '/sms-landing', pathMatch: 'full' }, // sms-landing-}
   
 ];

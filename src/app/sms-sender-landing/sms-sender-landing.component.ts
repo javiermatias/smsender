@@ -63,7 +63,7 @@ export class SmsSenderLandingComponent implements OnInit {
   
   onClose(object) {
 
-    console.log(object.ok);
+    //console.log(object.ok);
    if(object.ok ){
 
     this.descarga=false;
@@ -77,9 +77,9 @@ export class SmsSenderLandingComponent implements OnInit {
 
 
   contacto(el: HTMLElement){
-    console.log(el);
+    //console.log(el);
     
         el.scrollIntoView({behavior: 'smooth'});
-        console.log("se hizo click en contacto");
+        //console.log("se hizo click en contacto");
       }
 }
