@@ -11,8 +11,10 @@ const routes: Routes = [
 
   { path: 'sms-landing', component: SmsSenderLandingComponent },  
   { path: 'whatsapp-landing', component: WhatsappLandingComponent },
-  { path: 'downloadSMS/:user', component: DownloadSmsComponent },
-  { path: 'downloadWhats/:user', component: DownloadWhatsappComponent },
+  { path: 'downloadSMS', component: DownloadSmsComponent },
+  { path: 'downloadWhats', component: DownloadWhatsappComponent },
+/*   { path: 'downloadSMS/:user', component: DownloadSmsComponent },
+  { path: 'downloadWhats/:user', component: DownloadWhatsappComponent }, */
   { path: 'faqs', component: FaqsComponent },
   { path: '',   redirectTo: '/sms-landing', pathMatch: 'full' }, // sms-landing-}
   

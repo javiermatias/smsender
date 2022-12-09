@@ -9,12 +9,12 @@
         <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
           <h1 class="w3-xlarge">Envía SMS automáticos con esta App.</h1>
           <hr class="w3-opacity">
-          <p>Desde su PC sin pagos mensuales ni compras mínimas, envié  
+          <p class="w3-large">Desde su PC sin pagos mensuales ni compras mínimas, envié  
             SMS ilimitados con los paquetes de Mensajes que te ofrece tu operadora. ¿Porque
             pagar a terceros por el envío de SMS si puedes hacerlo desde tu PC a un costo
             insignificante?.
             </p>
-          <p><button class="w3-button w3-block w3-green w3-round" (click)="mostrarDescarga()">Download   <i class="fa fa-windows"></i></button></p>
+          <p><button class="w3-button w3-block w3-green w3-round" (click)="irDescarga()">Download   <i class="fa fa-windows"></i></button></p>
         </div>
       </div>
     </div>
@@ -25,7 +25,7 @@
           <h1 class="w3-xlarge w3-text-red">Rápido y muy sencillo de usar!</h1>
           <hr class="w3-opacity">
           <p>Usas tu propio telefono.Muy fácil de instalar: gratis para probar!</p>
-          <p><button class="w3-button w3-block w3-red w3-round" (click)="mostrarDescarga()">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
+          <p><button class="w3-button w3-block w3-red w3-round" (click)="irDescarga()">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
         </div>
       </div>
     </div>
@@ -36,7 +36,7 @@
           <h1 class="w3-xlarge">Expande tu negocio</h1>
           <hr class="w3-opacity">
           <p>Manten bien comunicados a tus clientes y atrae nuevos! </p>
-          <p><button class="w3-button w3-block w3-indigo w3-round" (click)="mostrarDescarga()">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
+          <p><button class="w3-button w3-block w3-indigo w3-round" (click)="irDescarga()">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
         </div>
       </div>
     </div>
@@ -46,9 +46,9 @@
 
   
 
-  <div *ngIf= 'descarga'>
+<!--   <div *ngIf= 'descarga'>
     <app-modal (closed)="onClose($event)"></app-modal>
-    </div>
+    </div> -->
 
     <!-- Clarity Section -->
 <div class="w3-padding-64 w3-light-grey" data-aos="fade-left" >
@@ -60,7 +60,7 @@
       <h1 class="w3-jumbo"><b>Potencia tu negocio</b></h1><br>
       <h1 class="w3-xxxlarge w3-text-red"><b>Atrae mas clientes</b></h1> <br>
       <p><span class="w3-xlarge">Revolución en el envío de mensajes.</span> </p> <br>
-        <p> 
+        <p class="w3-large"> 
           Con este revolucionario sistema, vas a poder estar mas cerca de tus clientes, ofreciendo nuevos productos, recordando citas,y todo lo que se te pueda ocurrir.
           El sistema es el mas sencillo y fácil de usar del mercado. También es novedoso y único en su forma de enviar. 
           Y posee un ilimitado envio de mensajes de texto(SMS), es decir no tendras restricciones en la cantidad de mensajes que desees enviar.
@@ -81,11 +81,11 @@
       <h1 class="w3-jumbo"><b>SMS SENDER</b></h1> <br>
       <h1 class="w3-xxxlarge w3-text-green"><b>Para que sirve?</b></h1> <br>
       <p><span class="w3-xlarge">Envia mensajes automáticos.</span> </p>  <br>
-      <p>
+      <p class="w3-large">
         Es un programa de escritorio que permite enviar masivamente mensajes de texto(SMS) a todos los contactos que tengas. 
         Sirve para diversas aplicaciones como Publicidad, Recordatorios, Ventas, Cobranzas Y mucho más.
          Recuerda que necesitas una PC con Windows 7 o Superior, Conexión a Internet y Télefono con Android.</p>
-      <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small" (click)="mostrarDescarga()">
+      <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small" (click)="irDescarga()">
         <i class="fa fa-download"></i> Descargar aplicación
       </button>
       <p>Disponible para <i class="fa fa-windows w3-xlarge w3-text-blue"></i></p>
@@ -93,7 +93,7 @@
     <div class="w3-col l3 m6">
       <img src="/assets/sms335x471.png" class="w3-image w3-right w3-hide-small" width="335" height="471">
       <div class="w3-center w3-hide-large w3-hide-medium">
-        <button class="w3-button w3-block w3-padding-large" (click)="mostrarDescarga()">
+        <button class="w3-button w3-block w3-padding-large" (click)="irDescarga()">
           <i class="fa fa-download"></i> Descargar aplicación
         </button>
         <img src="/assets/sms335x471.png" class="w3-image w3-margin-top" width="335" height="471">
@@ -126,7 +126,7 @@
             <h2 class="w3-opacity">$ 60 Dólares Americanos.</h2>
           </li>
           <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-black w3-padding-large" (click)="mostrarDescarga()"> <i class="fa fa-download"></i> Download</button>
+            <button class="w3-button w3-black w3-padding-large" (click)="irDescarga()"> <i class="fa fa-download"></i> Download</button>
           </li>
         </ul>
       
@@ -145,7 +145,7 @@
           <h2 class="w3-opacity">$ 60 Dólares Americanos.</h2>
         </li>
         <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large" (click)="mostrarDescarga()"> <i class="fa fa-download"></i> Download</button>
+          <button class="w3-button w3-black w3-padding-large" (click)="irDescarga()"> <i class="fa fa-download"></i> Download</button>
         </li>
       </ul>
     </div>
