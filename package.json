@@ -3,14 +3,18 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "export NODE_OPTIONS=--openssl-legacy-provider && export NODE_OPTIONS=--no-experimental-fetch && ng serve --port 4205",
-    "build": "export NODE_OPTIONS=--openssl-legacy-provider && export NODE_OPTIONS=--no-experimental-fetch && ng build", 
+    "start": "ng serve",
+    "build": "ng build", 
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
   "private": true,
+  "resolutions": {
+    "source-map": "^0.8.0-beta.0"
+  },
   "dependencies": {
+    "source-map": "^0.8.0-beta.0",
     "@angular/animations": "^8.2.14",
     "@angular/cdk": "^11.1.0",
     "@angular/common": "~8.2.14",
