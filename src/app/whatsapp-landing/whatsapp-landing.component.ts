@@ -54,6 +54,11 @@ export class WhatsappLandingComponent implements OnInit {
     window.alert('test');
   }
 
+  irDescarga(){
+    this.router.navigate(['downloadWhats']);
+  }
+
+
   mostrarDescarga(){
 
     //console.log("modal se activo");

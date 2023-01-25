@@ -11,8 +11,9 @@
           <h1 class="w3-xlarge">Envía WhatsApp automáticos con esta app</h1>
           <hr class="w3-opacity">
           <p>Muy fácil de instalar: gratis para probar!</p>
-          <p><button class="w3-button w3-block w3-green w3-round" (click)="mostrarDescarga()">Download   <i class="fa fa-windows"></i></button></p>
+          <p><button class="w3-button w3-block w3-green w3-round" (click)="irDescarga()">Download   <i class="fa fa-windows"></i></button></p>
         </div>
+
       </div>
     </div>
     <div *ngIf="slideActual === '2'" class="mySlides w3-animate-opacity">
@@ -22,7 +23,7 @@
           <h1 class="w3-xlarge w3-text-red">Rápido y muy sencillo de usar!</h1>
           <hr class="w3-opacity">
           <p>Usas tu propio telefono</p>
-          <p><button class="w3-button w3-block w3-red w3-round" (click)="mostrarDescarga()">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
+          <p><button class="w3-button w3-block w3-red w3-round" (click)="irDescarga()">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
         </div>
       </div>
     </div>
@@ -33,7 +34,7 @@
           <h1 class="w3-xlarge">Expande tu negocio</h1>
           <hr class="w3-opacity">
           <p>Manten bien comunicados a tus clientes y atrae nuevos! </p>
-          <p><button class="w3-button w3-block w3-indigo w3-round" (click)="mostrarDescarga()">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
+          <p><button class="w3-button w3-block w3-indigo w3-round" (click)="irDescarga()">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
         </div>
       </div>
     </div>
@@ -62,6 +63,7 @@
 </div>
 
 
+
     <!-- The App Section -->
 <div class="w3-padding-64 w3-white">
   <div class="w3-row-padding">
@@ -72,7 +74,7 @@
         Es un programa de escritorio que permite enviar WhatsApp automáticos a todos los contactos que tengas. 
         Sirve para diversas aplicaciones como Publicidad, Recordatorios, Ventas, Cobranzas Y mucho más.
          Recuerda que necesitas una PC con Windows 7 o Superior, Conexión a Internet y Télefono con Android.</p>
-      <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small" (click)="mostrarDescarga()">
+      <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small" (click)="irDescarga()">
         <i class="fa fa-download"></i> Descargar aplicación
       </button>
       <p>Disponible para <i class="fa fa-windows w3-xlarge w3-text-blue"></i></p>
@@ -111,7 +113,7 @@
           <h2 class="w3-opacity">$ 60 Dolares Americanos</h2>
         </li>
         <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large" (click)="mostrarDescarga()"> <i class="fa fa-download"></i> Download</button>
+          <button class="w3-button w3-black w3-padding-large" (click)="irDescarga()"> <i class="fa fa-download"></i> Download</button>
         </li>
       </ul>
     </div>

@@ -16,12 +16,12 @@ export class DownloadSmsComponent implements OnInit {
    }
 
   ngOnInit() {
-    this.user=this.route.snapshot.paramMap.get("user");
+    //this.user=this.route.snapshot.paramMap.get("user");
 
   }
 
   click(site:string){
-    console.log("User Click " + this.user + " Site "+ site);
+    //console.log("User Click " + this.user + " Site "+ site);
   }
 
 }

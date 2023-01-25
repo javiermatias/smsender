@@ -12,7 +12,7 @@ export class DownloadWhatsappComponent implements OnInit {
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.user=this.route.snapshot.paramMap.get("user");
+    //this.user=this.route.snapshot.paramMap.get("user");
   }
 
 }

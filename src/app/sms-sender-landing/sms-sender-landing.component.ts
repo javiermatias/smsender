@@ -32,7 +32,7 @@ export class SmsSenderLandingComponent implements OnInit {
   pasarSlide(){
 
    // console.log("paso slide");
-    for (var _i = 0; _i < this.slides.length; _i++) {
+    for (let _i = 0; _i < this.slides.length; _i++) {
       
       
 
@@ -63,21 +63,21 @@ export class SmsSenderLandingComponent implements OnInit {
   
 
   irDescarga(){
-    this.router.navigate(['downloadSMS/']);
+    this.router.navigate(['downloadWhats/']);
   }
 
 
   onClose(object) {
 
     //console.log(object.ok);
-   if(object.ok ){
+/*    if(object.ok ){
 
     this.descarga=false;
     //this.router.navigate(['download']);
     this.router.navigate(['downloadSMS/', object.user]);
    }else{
     this.descarga=false;
-   }
+   } */
 
   }
 
