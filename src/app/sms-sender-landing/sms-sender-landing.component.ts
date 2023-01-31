@@ -63,7 +63,7 @@ export class SmsSenderLandingComponent implements OnInit {
   
 
   irDescarga(){
-    this.router.navigate(['downloadWhats/']);
+    this.router.navigate(['downloadSMS']);
   }
 
 
