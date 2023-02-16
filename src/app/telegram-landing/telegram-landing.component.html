@@ -1,0 +1,201 @@
+<app-header (clickcontact)="contacto(contact)" ></app-header>
+
+
+<header class="w3-display-container w3-center">
+    <button class="w3-button w3-block w3-green w3-hide-large w3-hide-medium" (click)="alert()">Download<i class="fa fa-windows"></i></button>
+    <div *ngIf="slideActual === '1'" class="mySlides w3-animate-opacity">
+      <img title="Muy fácil de instalar: gratis para probar!"  class="w3-image" src="/assets/telegram3.jpg" alt="Image 1" style="min-width:100px" width="100%" height="1000">
+      <div class="w3-display-left w3-padding w3-hide-small" style="top:40%; width:35%">
+        <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+          <h1 class="w3-xlarge">Envía Mensajes de TELEGRAM automáticos con esta App.</h1>
+          <hr class="w3-opacity">
+          <p class="w3-large">Desde su PC sin pagos mensuales ni compras mínimas, envié  
+            TELEGRAMS ilimitados. ¿Porque
+            pagar a terceros por el envío de TELEGRAMS si puedes hacerlo desde tu PC a un costo
+            insignificante?.
+            </p>
+          <p><button class="w3-button w3-block w3-green w3-round" (click)="irDescarga()">Download   <i class="fa fa-windows"></i></button></p>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="slideActual === '2'" class="mySlides w3-animate-opacity">
+      <img class="w3-image" src="/assets/app2.jpg" alt="Image 2" style="min-width:100px" width="1500" height="1000">
+      <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+        <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+          <h1 class="w3-xlarge w3-text-red">Rápido y muy sencillo de usar!</h1>
+          <hr class="w3-opacity">
+          <p>Usas tu propio telefono.Muy fácil de instalar: gratis para probar!</p>
+          <p><button class="w3-button w3-block w3-red w3-round" (click)="irDescarga()">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
+        </div>
+      </div>
+    </div>
+    <div  *ngIf="slideActual === '3'" class="mySlides w3-animate-opacity">
+      <img class="w3-image" src="/assets/app4.jpg" alt="Image 3" style="min-width:100px" width="1500" height="1000">
+      <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+        <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+          <h1 class="w3-xlarge">Expande tu negocio</h1>
+          <hr class="w3-opacity">
+          <p>Manten bien comunicados a tus clientes y atrae nuevos! </p>
+          <p><button class="w3-button w3-block w3-indigo w3-round" (click)="irDescarga()">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
+        </div>
+      </div>
+    </div>
+    <a class="w3-button w3-black w3-display-right w3-margin-right w3-round w3-hide-small w3-hover-light-grey" (click)="pasarSlide()">Más Información<i class="fa fa-angle-right"></i></a>
+    <a class="w3-button w3-block w3-black w3-hide-large w3-hide-medium" (click)="pasarSlide()">Más Información <i class="fa fa-angle-right"></i></a>
+  </header>
+
+  
+
+<!--   <div *ngIf= 'descarga'>
+    <app-modal (closed)="onClose($event)"></app-modal>
+    </div> -->
+
+    <!-- Clarity Section -->
+<div class="w3-padding-64 w3-light-grey" data-aos="fade-left" >
+  <div class="w3-row-padding">
+    <div class="w3-col l4 m6">
+      <img class="w3-image w3-round-large w3-hide-small w3-grayscale" src="/assets/sms2-335x471.png" alt="App" width="335" height="471">
+    </div>
+    <div class="w3-col l8 m6" data-aos="fade-up">
+      <h1 class="w3-jumbo"><b>Potencia tu negocio</b></h1><br>
+      <h1 class="w3-xxxlarge w3-text-red"><b>Atrae mas clientes</b></h1> <br>
+      <p><span class="w3-xlarge">Revolución en el envío de mensajes.</span> </p> <br>
+        <p class="w3-large"> 
+          Con este revolucionario sistema, vas a poder estar mas cerca de tus clientes, ofreciendo nuevos productos, recordando citas,y todo lo que se te pueda ocurrir.
+          El sistema es el mas sencillo y fácil de usar del mercado. También es novedoso y único en su forma de enviar. 
+          Y posee un ilimitado envio de mensajes de Telegram, es decir no tendras restricciones en la cantidad de mensajes que desees enviar.
+          No lo pienses más y sumate al éxito.  SmartSoft te acompaña en el camino.
+
+        </p>
+        
+      
+    </div>
+  </div>
+</div>
+
+
+    <!-- The App Section -->
+<div class="w3-padding-64 w3-white" data-aos="zoom-in">
+  <div class="w3-row-padding">
+    <div class="w3-col l8 m6">
+      <h1 class="w3-jumbo"><b>TELEGRAM SENDER</b></h1> <br>
+      <h1 class="w3-xxxlarge w3-text-green"><b>Para que sirve?</b></h1> <br>
+      <p><span class="w3-xlarge">Envia mensajes automáticos.</span> </p>  <br>
+      <p class="w3-large">
+        Es un programa de escritorio que permite enviar masivamente mensajes de TELEGRAM a todos los contactos que tengas. 
+        Sirve para diversas aplicaciones como Publicidad, Recordatorios, Ventas, Cobranzas Y mucho más.
+         Recuerda que necesitas una PC con Windows 7 o Superior, Conexión a Internet y Télefono con Android.</p>
+      <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small" (click)="irDescarga()">
+        <i class="fa fa-download"></i> Descargar aplicación
+      </button>
+      <p>Disponible para <i class="fa fa-windows w3-xlarge w3-text-blue"></i></p>
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/assets/sms335x471.png" class="w3-image w3-right w3-hide-small" width="335" height="471">
+      <div class="w3-center w3-hide-large w3-hide-medium">
+        <button class="w3-button w3-block w3-padding-large" (click)="irDescarga()">
+          <i class="fa fa-download"></i> Descargar aplicación
+        </button>
+        <img src="/assets/sms335x471.png" class="w3-image w3-margin-top" width="335" height="471">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- Pricing Section -->
+<div class="w3-padding-64  w3-center w3-light-grey">
+  <h1 class="w3-jumbo"><b>Precios</b></h1>
+  <br>
+  <p class="w3-large">El precio mas conveniente del mercado. Mensajes Ilimitados, soporte y actualizaciones gratuitas.</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+<!--     <div class="w3-half w3-section">
+     
+        <ul class="w3-ul w3-card w3-hover-shadow">
+          <li class="w3-red w3-xlarge w3-padding-32">Licencia Anual</li>
+          <li class="w3-padding-16"><b>Sin límites de mensajes.</b> </li>
+          <li class="w3-padding-16"><b>Actualizaciones gratuitas.</b> </li>
+          <li class="w3-padding-16"><b>Soporte Gratuito.</b></li>
+          <li class="w3-padding-16"><b>Renovación anual por $20 dólares.</b></li>          
+          <li class="w3-padding-16">
+            <h2 class="w3-opacity">$ 60 Dólares Americanos.</h2>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-black w3-padding-large" (click)="irDescarga()"> <i class="fa fa-download"></i> Download</button>
+          </li>
+        </ul>
+      
+    </div> -->
+    <div  class="w3-quarter w3-section" ></div>
+    <div class="w3-half w3-section" style="margin: 0 auto;">
+      <ul class="w3-ul w3-card w3-hover-shadow">
+        <li class="w3-red w3-xlarge w3-padding-32">Licencia Definitiva</li>
+        <li class="w3-padding-16"><b>Sin límites de mensajes.</b> </li>
+        <li class="w3-padding-16"><b>Actualizaciones gratuitas.</b> </li>
+        <li class="w3-padding-16"><b>Soporte Gratuito.</b></li>
+        <li class="w3-padding-16"><b>Licencia de por vida.</b></li>
+        
+        
+        <li class="w3-padding-16">
+          <h2 class="w3-opacity">$ 60 Dólares Americanos.</h2>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large" (click)="irDescarga()"> <i class="fa fa-download"></i> Download</button>
+        </li>
+      </ul>
+    </div>
+    <div  class="w3-quarter w3-section" ></div>
+  </div>
+  <br>
+</div>
+
+<div class="w3-padding-64  w3-center w3-white" data-aos="fade-left" >
+  <div class="w3-row-padding">
+    <h1 class="w3-jumbo"><b>Como uso el programa?</b></h1><br>
+  <p class="w3-large">En este video te detallamos como usar el programa.</p>
+  
+  <div class="videoDiv">
+
+    <div class="iframe-container"> 
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2aASWUlN2_Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+
+</div> 
+</div>
+</div>
+
+
+
+<!-- Container (Contact Section) -->
+<div #contact>
+
+<div class="w3-content w3-container w3-padding-64" id="contact" >
+  <h3 class="w3-center">SmarSoft SMS Sender</h3>
+  <p class="w3-center"><em>Cualquier consulta que tengas, estamos a tu disposición!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="/assets/map.jpg" class="w3-image w3-round" style="width:100%">
+    </div>
+    
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Mundo<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +5493517418987<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: programas.smartsoft@gmail.com<br>
+      </div>
+  
+    </div>
+  </div>
+</div>
+</div>
+
+ <a  class="whats-app" href="https://wa.me/5493517418987" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+</a>

@@ -14,6 +14,8 @@ import { WhatsappLandingComponent } from './whatsapp-landing/whatsapp-landing.co
 import { DownloadWhatsappComponent } from './download-whatsapp/download-whatsapp.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { FaqsComponent } from './faqs/faqs.component';
+import { TelegramLandingComponent } from './telegram-landing/telegram-landing.component';
+import { DownloadTelegramComponent } from './download-telegram/download-telegram.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { FaqsComponent } from './faqs/faqs.component';
     DownloadSmsComponent,
     WhatsappLandingComponent,
     DownloadWhatsappComponent,
-    FaqsComponent
+    FaqsComponent,
+    TelegramLandingComponent,
+    DownloadTelegramComponent
   ],
   imports: [    
     BrowserModule,
