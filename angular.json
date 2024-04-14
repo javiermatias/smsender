@@ -125,5 +125,8 @@
         }
       }
     }},
-  "defaultProject": "sms-sender"
+  "defaultProject": "sms-sender",
+  "cli": {
+    "analytics": "13c50cdc-ed4b-405c-a2a7-582066dbc6a8"
+  }
 }
