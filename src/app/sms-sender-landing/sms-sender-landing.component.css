@@ -85,7 +85,7 @@ img {margin-bottom: -8px;}
   }
   
   tr:nth-child(even) {
-    background-color: #902d2d
+    background-color: hsl(0, 44%, 22%)
   }
   
   .fa-check {
