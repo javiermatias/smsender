@@ -1,9 +1,9 @@
 {
   "name": "sms-sender",
   "version": "0.0.0",
-  "scripts": {
+  "scripts": { 
     "ng": "ng",
-    "start": "set NODE_OPTIONS=--openssl-legacy-provider && ng serve",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider ng serve",
     "build": "ng build", 
     "test": "ng test",
     "lint": "ng lint",

@@ -1,5 +1,30 @@
-<app-header (clickcontact)="contacto(contact)" ></app-header>
+<!-- <app-header (clickcontact)="contacto(contact)" ></app-header> -->
 
+<!-- ANNOUNCEMENT BANNER: MIGRATION TO CHROME EXTENSION -->
+<!-- ANNOUNCEMENT BANNER: MIGRATION TO CHROME EXTENSION -->
+<div class="w3-panel w3-amber w3-card-4 w3-center w3-padding-24">
+  <span onclick="this.parentElement.style.display='none'" class="w3-button w3-large w3-display-topright">&times;</span>
+  <h3><i class="fa fa-info-circle"></i> Anuncio Importante</h3>
+  <p class="w3-large">Nuestra aplicación de escritorio ha migrado a una <strong>extensión de Chrome</strong> para facilitar su uso e instalación.</p>
+ 
+  
+    <!-- Tutorial and Support Links Section -->
+    <div class="w3-margin-top w3-medium">
+      <p style="margin: 8px 0;">
+        <span>Si necesita ver un tutorial de cómo usar la extensión, <strong><a href="https://youtu.be/p8nXupDR6F8" target="_blank" class="w3-text-black">haga clic aquí</a></strong>.</span>
+        <br>
+        <span>Para ayuda o alguna consulta, contáctenos por <strong><a href="https://wa.me/5493517418987" target="_blank" class="w3-text-black">WhatsApp <i class="fa fa-whatsapp"></i></a></strong>.</span>
+      </p>
+    </div>
+    <p>Te invitamos a descargar la nueva versión y disfrutar de una experiencia mejorada.</p>
+  <!-- Main Call to Action Button -->
+  <a href="https://chromewebstore.google.com/detail/ccbbbpipbalhchbmhjpeboonfbednafp?utm_source=item-share-cb" target="_blank" class="w3-button w3-black w3-round w3-margin-top">
+    <i class="fa fa-chrome"></i> Ir a la Chrome Web Store
+  </a>
+
+
+
+</div>
 
 <header class="w3-display-container w3-center">
   
@@ -8,7 +33,7 @@
       <h2 class="w3-large">Bienvenidos a SmartSoft</h2>
     </div>
   
-    <button class="w3-button w3-block w3-green w3-hide-large w3-hide-medium" (click)="alert()">Download<i class="fa fa-windows"></i></button>
+    <button class="w3-button w3-block w3-green w3-hide-large w3-hide-medium" (click)="irDescarga()">Download<i class="fa fa-windows"></i></button>
     
       <img title="Muy fácil de instalar: gratis para probar!"  class="w3-image" src="/assets/sms1.jpg" alt="Image 1" style="min-width:100px" width="100%" height="1000">
       <div class="w3-display-left w3-padding w3-hide-small" style="top:40%; width:35%">
@@ -20,51 +45,50 @@
             pagar a terceros por el envío de SMS si puedes hacerlo desde tu PC a un costo
             insignificante?.
             </p>
-          <p><button class="w3-button w3-block w3-green w3-round" (click)="irDescarga()">Download   <i class="fa fa-windows"></i></button></p>
+          <p><button class="w3-button w3-block w3-green w3-round" (click)="irDescarga()">Download Extension<i class="fa fa-windows"></i></button></p>
         </div>
       </div>
 
-    <!--   <div class="w3-display-right w3-padding w3-hide-small" style="top:40%; width: 60%; margin-right: 20px;">
-        <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+      <div class="w3-display-right w3-padding w3-hide-small" style="top:40%; width: 60%; margin-right: 20px;">
+        <div class="w3-black w3-hover-opacity-off w3-padding-large w3-round-large">
           <h1 class="w3-xlarge">TABLA COMPARATIVA.</h1>
           <hr class="w3-opacity">
-          <p class="w3-large">Dinero que puedes ahorrar usando el programa SMSSENDER de SmartSoft
-            </p>
+          <p class="w3-large">Dinero que puedes ahorrar usando el programa SMSSENDER de SmartSoft</p>
+          
           <table style="width: 100%; border-collapse: collapse; color: whitesmoke;">
             <tr>
-                <th style="width: 25%; border: 1px solid whitesmoke;">Cantidad Mensajes</th>
-                <th style="width: 25%; border: 1px solid whitesmoke;">Precio x Mensaje (USD)</th>
-                <th style="width: 25%; border: 1px solid whitesmoke;">TWILO</th>
-                <th style="width: 25%; border: 1px solid whitesmoke;">SMARTSOFT</th>
+              <th style="width: 25%; border: 1px solid whitesmoke;">Cantidad Mensajes</th>
+              <th style="width: 25%; border: 1px solid whitesmoke;">Precio x Mensaje (USD)</th>
+              <th style="width: 25%; border: 1px solid whitesmoke;">TWILO</th>
+              <th style="width: 25%; border: 1px solid whitesmoke;">SMARTSOFT</th>
             </tr>
             <tr>
-                <td style="border: 1px solid whitesmoke;">5000</td>
-                <td style="border: 1px solid whitesmoke;">0.1079 USD</td>
-                <td style="border: 1px solid whitesmoke;">$540</td>
-                <td style="border: 1px solid whitesmoke;"><i class="fa fa-check">$65</i></td>
+              <td style="border: 1px solid whitesmoke;">5000</td>
+              <td style="border: 1px solid whitesmoke;">0.1079 USD</td>
+              <td style="border: 1px solid whitesmoke;">$540</td>
+              <td style="border: 1px solid whitesmoke;"><i class="fa fa-check">$60</i></td>
             </tr>
             <tr>
-                <td style="border: 1px solid whitesmoke;">10000</td>
-                <td style="border: 1px solid whitesmoke;">0.1079 USD</td>
-                <td style="border: 1px solid whitesmoke;">$1079</td>
-                <td style="border: 1px solid whitesmoke;"><i class="fa fa-check">$65</i></td>
+              <td style="border: 1px solid whitesmoke;">10000</td>
+              <td style="border: 1px solid whitesmoke;">0.1079 USD</td>
+              <td style="border: 1px solid whitesmoke;">$1079</td>
+              <td style="border: 1px solid whitesmoke;"><i class="fa fa-check">$60</i></td>
             </tr>
             <tr>
-                <td style="border: 1px solid whitesmoke;">50000</td>
-                <td style="border: 1px solid whitesmoke;">0.1057 USD</td>
-                <td style="border: 1px solid whitesmoke;">$5285</td>
-                <td style="border: 1px solid whitesmoke;"><i class="fa fa-check">$65</i></td>
+              <td style="border: 1px solid whitesmoke;">50000</td>
+              <td style="border: 1px solid whitesmoke;">0.1057 USD</td>
+              <td style="border: 1px solid whitesmoke;">$5285</td>
+              <td style="border: 1px solid whitesmoke;"><i class="fa fa-check">$60</i></td>
             </tr>
             <tr>
-                <td style="border: 1px solid whitesmoke;">100000</td>
-                <td style="border: 1px solid whitesmoke;">0.1014 USD</td>
-                <td style="border: 1px solid whitesmoke;">$10140</td>
-                <td style="border: 1px solid whitesmoke;"><i class="fa fa-check">$65</i></td>
+              <td style="border: 1px solid whitesmoke;">100000</td>
+              <td style="border: 1px solid whitesmoke;">0.1014 USD</td>
+              <td style="border: 1px solid whitesmoke;">$10140</td>
+              <td style="border: 1px solid whitesmoke;"><i class="fa fa-check">$60</i></td>
             </tr>
-        </table>
-          
+          </table>
         </div>
-      </div> -->
+      </div>
 
   <!--     <div class="w3-display-right" style=" top:20%; width: 60%; margin-right: 20px;">
         <div class="w3-display-left w3-padding w3-hide-small">
@@ -151,7 +175,7 @@
       <h1 class="w3-xxxlarge w3-text-green"><b>Para que sirve?</b></h1> <br>
       <p><span class="w3-xlarge">Envia mensajes automáticos.</span> </p>  <br>
       <p class="w3-large">
-        Es un programa de escritorio que permite enviar masivamente mensajes de texto(SMS) a todos los contactos que tengas. 
+        Es una extensión de Chrome que permite enviar masivamente mensajes de texto(SMS) a todos los contactos que tengas. 
         <br>
         Sirve para diversas aplicaciones como Publicidad, Recordatorios, Ventas, Cobranzas Y mucho más.
         <br>
@@ -183,7 +207,7 @@
 <div class="w3-padding-64  w3-center w3-light-grey">
   <h1 class="w3-jumbo"><b>Precios</b></h1>
   <br>
-  <p class="w3-large">El precio mas conveniente del mercado. Mensajes Ilimitados, soporte y actualizaciones gratuitas.</p>
+  <p class="w3-large">El precio mas conveniente del mercado. Mensajes Ilimitados, soporte y actualizaciones.</p>
   <div class="w3-row-padding" style="margin-top:64px">
 <!--     <div class="w3-half w3-section">
      
@@ -205,15 +229,15 @@
     <div  class="w3-quarter w3-section" ></div>
     <div class="w3-half w3-section" style="margin: 0 auto;">
       <ul class="w3-ul w3-card w3-hover-shadow">
-        <li class="w3-red w3-xlarge w3-padding-32">Licencia Definitiva</li>
+        <li class="w3-red w3-xlarge w3-padding-32">Licencia Anual.</li>
         <li class="w3-padding-16"><b>Sin límites de mensajes.</b> </li>
-        <li class="w3-padding-16"><b>Actualizaciones gratuitas.</b> </li>
-        <li class="w3-padding-16"><b>Soporte Gratuito.</b></li>
-        <li class="w3-padding-16"><b>Licencia de por vida.</b></li>
+        <li class="w3-padding-16"><b>Actualizaciones.</b> </li>
+        <li class="w3-padding-16"><b>Soporte.</b></li>
+        <li class="w3-padding-16"><b>Renovación por $20 dolares.</b></li>
         
         
         <li class="w3-padding-16">    
-          <h2 class="w3-opacity">$65 Dólares Comprando Online.</h2>
+          <h2 class="w3-opacity">$60 Dólares.</h2>
         </li>
         <li class="w3-light-grey w3-padding-24">
           <a href="https://paypal-wcnd.onrender.com/">
@@ -245,7 +269,7 @@
   <div class="videoDiv">
 
     <div class="iframe-container"> 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/2aASWUlN2_Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/p8nXupDR6F8?si=HwQoPlQOF5XGwuV4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 
 

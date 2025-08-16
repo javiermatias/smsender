@@ -63,7 +63,10 @@ export class SmsSenderLandingComponent implements OnInit {
   
 
   irDescarga(){
-    this.router.navigate(['downloadSMS']);
+    window.open(
+      'https://chromewebstore.google.com/detail/ccbbbpipbalhchbmhjpeboonfbednafp?utm_source=item-share-cb',
+      '_blank'
+    );
   }
 
 
