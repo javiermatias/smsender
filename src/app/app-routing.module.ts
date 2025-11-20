@@ -7,6 +7,7 @@ import { DownloadWhatsappComponent } from './download-whatsapp/download-whatsapp
 import { FaqsComponent } from './faqs/faqs.component';
 import { DownloadTelegramComponent } from './download-telegram/download-telegram.component';
 import { TelegramLandingComponent } from './telegram-landing/telegram-landing.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 
 const routes: Routes = [
@@ -20,6 +21,7 @@ const routes: Routes = [
 /*   { path: 'downloadSMS/:user', component: DownloadSmsComponent },
   { path: 'downloadWhats/:user', component: DownloadWhatsappComponent }, */
   { path: 'faqs', component: FaqsComponent },
+  { path: 'privacy', component: PrivacyComponent },
   { path: '',   redirectTo: '/sms-landing', pathMatch: 'full' }, // sms-landing-}
   
 ];

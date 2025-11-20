@@ -16,6 +16,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { FaqsComponent } from './faqs/faqs.component';
 import { TelegramLandingComponent } from './telegram-landing/telegram-landing.component';
 import { DownloadTelegramComponent } from './download-telegram/download-telegram.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { DownloadTelegramComponent } from './download-telegram/download-telegram
     DownloadWhatsappComponent,
     FaqsComponent,
     TelegramLandingComponent,
-    DownloadTelegramComponent
+    DownloadTelegramComponent,
+    PrivacyComponent
   ],
   imports: [    
     BrowserModule,
