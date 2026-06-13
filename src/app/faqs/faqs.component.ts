@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SeoService } from '../services/seo.service';
 
 @Component({
   selector: 'app-faqs',
@@ -8,10 +9,15 @@ import { Component, OnInit } from '@angular/core';
 export class FaqsComponent implements OnInit {
 
 
-  constructor() { }
+  constructor(private seo: SeoService) { }
 
   pregunta1= false;
   ngOnInit() {
+    this.seo.update({
+      title: 'Preguntas frecuentes (FAQ) | SMS Sender SmartSoft',
+      description: 'Resuelve tus dudas sobre SMS Sender de SmartSoft: cómo enviar SMS, WhatsApp y Telegram masivos desde tu PC, instalación, costos y soporte.',
+      path: '/faqs'
+    });
   }
 
  

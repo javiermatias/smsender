@@ -1,0 +1,36 @@
+# SMS Sender - SmartSoft
+
+> SMS Sender es una aplicación de SmartSoft para enviar SMS, WhatsApp y Telegram
+> masivos y automáticos directamente desde tu PC, sin pagos mensuales ni compras
+> mínimas. Usa los paquetes de mensajes de tu propia operadora o tu propio
+> teléfono, logrando un costo por mensaje mucho menor que servicios como Twilio.
+> Gratis para probar. La aplicación se distribuye como extensión de Google Chrome.
+
+## Qué resuelve
+
+- Envío de SMS masivos automáticos desde la PC.
+- Envío de mensajes masivos de WhatsApp y Telegram.
+- Ahorro frente a proveedores de SMS por API (ej. Twilio): el usuario aprovecha
+  los paquetes de su operadora en lugar de pagar por mensaje a terceros.
+- Sin suscripción mensual ni mínimos de compra.
+
+## Páginas principales
+
+- [Landing SMS (inicio)](https://sms-sender.smartsoftia.com/sms-landing): producto principal, tabla comparativa de ahorro vs Twilio.
+- [Landing WhatsApp](https://sms-sender.smartsoftia.com/whatsapp-landing): envío masivo de WhatsApp desde la PC usando tu propio teléfono.
+- [Landing Telegram](https://sms-sender.smartsoftia.com/telegram-landing): envío masivo e ilimitado de mensajes de Telegram.
+- [Preguntas frecuentes](https://sms-sender.smartsoftia.com/faqs): dudas comunes sobre instalación, uso, costos y soporte.
+- [Política de privacidad](https://sms-sender.smartsoftia.com/privacy): tratamiento y protección de datos.
+
+## Descarga
+
+- Extensión de Chrome: https://chromewebstore.google.com/detail/ccbbbpipbalhchbmhjpeboonfbednafp
+
+## Contacto y soporte
+
+- WhatsApp: https://wa.me/5493517418987
+- Tutorial de uso (video): https://youtu.be/p8nXupDR6F8
+
+## Empresa
+
+- SmartSoft — desarrollo de software para mensajería masiva.

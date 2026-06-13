@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { SeoService } from '../services/seo.service';
 
 @Component({
   selector: 'app-sms-sender-landing',
@@ -14,9 +15,15 @@ export class SmsSenderLandingComponent implements OnInit {
   descarga= false;
 
   interval;
-  constructor(private router: Router) { }
+  constructor(private router: Router, private seo: SeoService) { }
 
   ngOnInit() {
+    this.seo.update({
+      title: 'SMS Sender - Envía SMS masivos desde tu PC sin pagos mensuales | SmartSoft',
+      description: 'Envía SMS masivos automáticos desde tu PC con SMS Sender de SmartSoft. Sin pagos mensuales ni compras mínimas: usa los paquetes de tu operadora y ahorra frente a Twilio. Gratis para probar.',
+      path: '/',
+      image: 'https://sms-sender.smartsoftia.com/assets/sms1.jpg'
+    });
     //this.startTimer();
   }
 

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { SeoService } from '../services/seo.service';
 
 @Component({
   selector: 'app-whatsapp-landing',
@@ -14,9 +15,15 @@ export class WhatsappLandingComponent implements OnInit {
   descarga= false;
 
   interval;
-  constructor(private router: Router) { }
+  constructor(private router: Router, private seo: SeoService) { }
 
   ngOnInit() {
+    this.seo.update({
+      title: 'Enviar WhatsApp masivos automáticos desde tu PC | SMS Sender SmartSoft',
+      description: 'Envía mensajes de WhatsApp masivos automáticos desde tu PC con SMS Sender de SmartSoft. Rápido, sencillo y usando tu propio teléfono. Gratis para probar.',
+      path: '/whatsapp-landing',
+      image: 'https://sms-sender.smartsoftia.com/assets/whatsapp1.jpg'
+    });
   }
 
 
